@@ -29,7 +29,7 @@ def produce_submission_text_file(CIK_num):
 def main():
     cik_numbers_file = open("CIK_Numbers.txt", "r")
     cik_numbers = cik_numbers_file.readlines()
-    cik_numbers = cik_numbers[1000:10000]
+    cik_numbers = cik_numbers[1000:2000]
     # i = 0
     for cik_number in cik_numbers:
         produce_submission_text_file(cik_number.rstrip())
